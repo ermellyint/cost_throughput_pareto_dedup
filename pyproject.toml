@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ermellyint-compilerfuse_jd425"
+name = "ermellyint-cost_throughput_pareto_dedup"
 version = "0.1.0"
 description = "对内容做归一化与分片比对，找出编译器与算子融合专家·成本与吞吐的帕累托边界上的重复项并按相似度归并"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://ermellyint.github.io"
-Repository = "https://github.com/ermellyint/compilerfuse_jd425"
-Issues = "https://github.com/ermellyint/compilerfuse_jd425/issues"
+Repository = "https://github.com/ermellyint/cost_throughput_pareto_dedup"
+Issues = "https://github.com/ermellyint/cost_throughput_pareto_dedup/issues"
 
 [project.scripts]
-compilerfuse_jd425 = "compilerfuse_jd425:main"
+cost_throughput_pareto_dedup = "cost_throughput_pareto_dedup:main"
 
 [tool.setuptools]
-py-modules = ["compilerfuse_jd425"]
+py-modules = ["cost_throughput_pareto_dedup"]

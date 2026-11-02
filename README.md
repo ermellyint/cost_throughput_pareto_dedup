@@ -1,11 +1,11 @@
-# compilerfuse_jd425
+# cost_throughput_pareto_dedup
 
 **在编译器与算子融合专家·成本与吞吐的帕累托边界里找出重复内容并给出归并建议。**
 
-`compilerfuse_jd425` —— 对内容做归一化与分片比对，找出编译器与算子融合专家·成本与吞吐的帕累托边界上的重复项并按相似度归并
+`cost_throughput_pareto_dedup` —— 对内容做归一化与分片比对，找出编译器与算子融合专家·成本与吞吐的帕累托边界上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`compilerfuse_jd425.py` 拷走就能用
+- 单文件，`cost_throughput_pareto_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install ermellyint-compilerfuse_jd425
+pip install ermellyint-cost_throughput_pareto_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-compilerfuse_jd425 --help
+cost_throughput_pareto_dedup --help
 ```
 
-也可以不用安装，直接把 `compilerfuse_jd425.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `cost_throughput_pareto_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ compilerfuse_jd425 --help
 ## 用法
 
 ```bash
-python compilerfuse_jd425.py --file input.txt
-python compilerfuse_jd425.py --text "示例内容"
-python compilerfuse_jd425.py --file input.txt --json
+python cost_throughput_pareto_dedup.py --file input.txt
+python cost_throughput_pareto_dedup.py --text "示例内容"
+python cost_throughput_pareto_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python compilerfuse_jd425.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_compilerfuse_jd425.py
+python test_cost_throughput_pareto_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_compilerfuse_jd425.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/ermellyint/compilerfuse_jd425>
+- GitHub 仓库：<https://github.com/ermellyint/cost_throughput_pareto_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_compilerfuse_jd425.py
 ermellyint 做编译器与算子融合专家·成本与吞吐的帕累托边界相关的问题，方向对标无问芯穹的实习编译器与算子融合专家岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://ermellyint.github.io>
-- 仓库：<https://github.com/ermellyint/compilerfuse_jd425>
+- 仓库：<https://github.com/ermellyint/cost_throughput_pareto_dedup>
 
 ## 许可
 
